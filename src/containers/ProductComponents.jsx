@@ -11,9 +11,9 @@ const ProductComponents = () => {
                 <Link to={`/product/${id}`}>
                 
             <div className='ui link cards'>
-                <div className="card">
+                <div className="card" style={{height: 500}}>
                     <div className="image">
-                        <img src={image} alt={title}/>
+                        <img src={image} alt={title} style={{width:280, height: 350}}/>
                     </div>
                     <div className="content">
                         <div className="header">
