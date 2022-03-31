@@ -2,9 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App"> 
-    sdfv
-    </div>
+    <h1>Hello</h1>
   );
 }
 
