@@ -5,14 +5,12 @@ const Header = () => {
   return (
     <>
       <div className="ui pointing menu" style={{padding: '4px 30px'}}>
-        <Link to="/">
-            <a className="item active">GOGOGO SHOP</a>
-        </Link>
+      <Link to="/" className="item active">AR SHOP</Link>
         <div className="right menu">
-          <div class="ui vertical animated button" tabindex="0">
-            <div class="hidden content">Shop</div>
-            <div class="visible content">
-              <i class="shop icon"/>
+          <div className ="ui vertical animated button" tabIndex="0">
+            <div className="hidden content">Shop</div>
+            <div className="visible content">
+              <i className="shop icon"/>
             </div>
           </div>
         </div>

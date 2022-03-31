@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 const ProductComponents = () => {
     const products = useSelector(state => state.allProducts.product)
-    console.log(products);
     const renderList = products.map((product) => {
         const {id, title, image, price, category} = product
         return (
@@ -13,7 +12,7 @@ const ProductComponents = () => {
             <div className='ui link cards'>
                 <div className="card" style={{height: 500}}>
                     <div className="image">
-                        <img src={image} alt={title} style={{width:280, height: 350}}/>
+                        <img src={image} alt={title} style={{width:"100%", height: 300}}/>
                     </div>
                     <div className="content">
                         <div className="header">
