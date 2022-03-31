@@ -1,19 +1,13 @@
 import { ActionType } from "../contants/action-type";
 
 const initialState = {
-  product: [
-      {
-          id : 1,
-          title : "Asadulloh",
-          category : "Frontend developer"
-      }
-  ],
+  product: [],
 };
 
 export const productReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case ActionType.SET_PRODUCTS:
-      return state;
+      return {...state, product : payload}; //qancha malumot kelishini bilmaganligimiz uchun spreed operatoridan fodalanamiz
     default:
       return state;
   }
